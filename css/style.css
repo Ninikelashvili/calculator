@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.page-calculator {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #F4EADB;
+}/*# sourceMappingURL=style.css.map */
