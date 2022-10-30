@@ -86,6 +86,7 @@
 .page-calculator .calculator .container .action-total h3 {
   color: rgba(158, 146, 179, 0.5490196078);
   margin-bottom: 10px;
+  font-size: 15px;
 }
 .page-calculator .calculator .container .action-total .actions {
   display: flex;
@@ -117,7 +118,7 @@
   box-shadow: 0 0 5px rgba(158, 146, 179, 0.3333333333);
 }
 .page-calculator .calculator .container .action-total .actions .actions-container button img {
-  width: 100%;
+  width: 75%;
 }
 .page-calculator .calculator .container .action-total .actions .actions-container .amount {
   color: rgba(158, 146, 179, 0.5490196078);

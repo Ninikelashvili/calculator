@@ -16,12 +16,12 @@
       <h1>Calculator</h1>
 
       <div class="container">
-        <label>Bill Total</label>
+        <label>Amount to be paid</label>
         <div class="input-container">
           <span>$</span>
           <input
             type="text"
-            onkeyup="calculateBill()"
+            onkeyup="calculateAmount()"
             id="billInput"
             placeholder="0.00"
           />
@@ -31,8 +31,8 @@
           <span>%</span>
           <input
             type="text"
-            onkeyup="calculateBill()"
-            id="billInput"
+            onkeyup="calculateAmount()"
+            id="percentInput"
             placeholder="10"
           />
         </div>
@@ -40,18 +40,18 @@
           <div class="actions">
             <h3>Count</h3>
             <div class="actions-container">
-              <button>
+              <button onclick="increaseCount()">
                 <img src="./media/plus.svg" alt="plus" />
               </button>
               <p class="amount" id="numberOfCount">1</p>
-              <button>
+              <button onclick="decreaseCount()">
                 <img src="./media/minus.svg" alt="minus" />
               </button>
             </div>
           </div>
           <div class="total">
-            <h3>Total</h3>
-            <p>0.00</p>
+            <h3>Total Per Amount</h3>
+            <p id="total">$ 0.00</p>
           </div>
         </div>
       </div>
