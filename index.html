@@ -6,12 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="page-calculator"></body>
+  <body class="page-calculator">
+    <div class="calculator">
+      <h1>Calculator</h1>
+
+      <div class="container">
+        <label>Bill Total</label>
+        <div class="input-container">
+          <span>$</span>
+          <input
+            type="text"
+            onkeyup="calculateBill()"
+            id="billInput"
+            placeholder="0.00"
+          />
+        </div>
+        <label>Percent</label>
+        <div class="input-container">
+          <span>%</span>
+          <input
+            type="text"
+            onkeyup="calculateBill()"
+            id="billInput"
+            placeholder="10"
+          />
+        </div>
+        <div class="action-total">
+          <div class="actions">
+            <h3>Count</h3>
+            <div class="actions-container">
+              <button>
+                <img src="./media/plus.svg" alt="plus" />
+              </button>
+              <p class="amount" id="numberOfCount">1</p>
+              <button>
+                <img src="./media/minus.svg" alt="minus" />
+              </button>
+            </div>
+          </div>
+          <div class="total">
+            <h3>Total</h3>
+            <p>0.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 
   <script src="./js/app.js"></script>
 </html>

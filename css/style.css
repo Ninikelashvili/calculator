@@ -4,12 +4,126 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .page-calculator {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-color: #F4EADB;
+  background-color: #1c1725;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-calculator .calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-calculator .calculator h1 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: rgba(158, 146, 179, 0.6431372549);
+}
+.page-calculator .calculator .container {
+  max-width: 40vw;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .page-calculator .calculator .container {
+    max-width: 90vw;
+  }
+}
+.page-calculator .calculator .container label {
+  color: rgba(158, 146, 179, 0.6431372549);
+  font-size: 15px;
+}
+.page-calculator .calculator .container .input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: solid 0.2px rgba(158, 146, 179, 0.5490196078);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0 25px 0;
+}
+.page-calculator .calculator .container .input-container span {
+  width: 1vw;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.8509803922);
+}
+.page-calculator .calculator .container .input-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 10px;
+}
+.page-calculator .calculator .container .input-container input::-moz-placeholder {
+  color: rgba(158, 146, 179, 0.1137254902);
+}
+.page-calculator .calculator .container .input-container input:-ms-input-placeholder {
+  color: rgba(158, 146, 179, 0.1137254902);
+}
+.page-calculator .calculator .container .input-container input::placeholder {
+  color: rgba(158, 146, 179, 0.1137254902);
+}
+.page-calculator .calculator .container .input-container input, .page-calculator .calculator .container .input-container select, .page-calculator .calculator .container .input-container textarea {
+  color: rgba(158, 146, 179, 0.5490196078);
+}
+.page-calculator .calculator .container .action-total {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.page-calculator .calculator .container .action-total h3 {
+  color: rgba(158, 146, 179, 0.5490196078);
+  margin-bottom: 10px;
+}
+.page-calculator .calculator .container .action-total .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.page-calculator .calculator .container .action-total .actions .actions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.page-calculator .calculator .container .action-total .actions .actions-container button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.5px rgba(158, 146, 179, 0.5490196078);
+  border-radius: 50%;
+  padding: 7px;
+  height: 25px;
+  width: 25px;
+  transition: all 0.5s ease;
+}
+.page-calculator .calculator .container .action-total .actions .actions-container button:hover {
+  box-shadow: 0 0 5px rgba(158, 146, 179, 0.3333333333);
+}
+.page-calculator .calculator .container .action-total .actions .actions-container button img {
+  width: 100%;
+}
+.page-calculator .calculator .container .action-total .actions .actions-container .amount {
+  color: rgba(158, 146, 179, 0.5490196078);
+  font-weight: 800;
+  margin: 0 20px;
+}
+.page-calculator .calculator .container .action-total .total p {
+  color: rgba(158, 146, 179, 0.5490196078);
 }/*# sourceMappingURL=style.css.map */

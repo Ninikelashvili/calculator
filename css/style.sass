@@ -4,10 +4,104 @@
     box-sizing: border-box
     text-decoration: none
     list-style: none
-    font-family: 'Nanum Myeongjo', serif
+    font-family: 'Nunito', sans-serif
+// @mixin background($imgpath,$position:0 0,$repeat: no-repeat)
+//     background:
+//     image: url($imgpath)
+//     position: $position
+//     repeat: $repeat
 
 .page-calculator
     width: 100%
     min-height: 100vh
     height: 100%
-    background-color: #F4EADB
+    background-color: #1c1725
+    // @include background('./media/background.jpg')
+    display: flex
+    align-items: center
+    justify-content: center
+    .calculator
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            font-size: 30px
+            font-weight: 800
+            letter-spacing: 5px
+            margin-bottom: 30px
+            color: #9e92b3a4
+        .container
+            max-width: 40vw
+            width: 100%
+            @media (max-width: 768px)
+                max-width: 90vw
+            label
+                color: #9e92b3a4
+                font-size: 15px
+            .input-container
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                border: solid 0.2px #9e92b38c
+                border-radius: 20px
+                padding: 10px 20px
+                margin: 10px 0 25px 0
+                span
+                    width: 1vw
+                    margin-right: 10px
+                    color: #ffffffd9
+                input
+                    width: 100%
+                    border: none
+                    outline: none
+                    background: transparent
+                    padding: 0 10px
+                input::placeholder
+                    color: #9e92b31d
+                input, select, textarea
+                    color: #9e92b38c
+            .action-total
+                width: 100%
+                display: flex
+                align-items: flex-end
+                justify-content: space-between
+                margin-top: 30px
+                h3
+                    color: #9e92b38c
+                    margin-bottom: 10px
+                .actions
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    .actions-container
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: center
+                        button
+                            cursor: pointer
+                            background: transparent
+                            border: none
+                            outline: none
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            border: solid 0.5px #9e92b38c
+                            border-radius: 50%
+                            padding: 7px
+                            height: 25px
+                            width: 25px
+                            transition: all 0.5s ease
+                            &:hover
+                                box-shadow: 0 0 5px #9e92b355
+                            img
+                                width: 100%
+                        .amount
+                            color: #9e92b38c
+                            font-weight: 800
+                            margin: 0 20px
+                .total
+                    p
+                        color: #9e92b38c
